@@ -1,0 +1,232 @@
+HTML
+
+1.Name the components of html elements properly
+2.Identify void elements and how they are denoted NOCH NICHT BEANTWORTET
+3.Identify attributes
+4.Write down the correct DOCTYPE declaration for html 5
+5.Write down syntactically correct statements for the following elements 
+Article (<article>)
+Body (<body>)
+line break (<br/>)
+Headings (<h1>, ...)
+Section with meta-information (<head>)
+Top level element (<html>)
+Image named Team.jpg (<img src="Team.jpg">)
+Paragraph (<p>)
+Section (<section>)
+Label appearing in the title bar (<title>)
+Link to other pages (<a>)
+Comment
+Head with title and meta elements
+------------------------------------------------------------------------------------
+Css
+
+1.Name the components of a css rule properly
+2.Use combinators properly: direct child, descendant, adjacent sibling, sibling
+3.Specify colors by color names and in hexadecimal notation
+4.Declarations for color, background color
+5.Pseudo classes for the <a> element
+6.Declaration for background image
+7.Declaration for text alignment (left, right, center, justify)
+8.Declaration for text decoration (overline, underline, line-through)
+9.Declaration for text transformation (uppercase, lowercase, capitalize)
+10.Identify the difference between serif and sans-serif fonts
+11.Declarations for font families
+12.Declarations for font style normal and italic
+13.Declarations for font sizes
+14.Declarations for font weights
+
+------------------------------------------------------------------------------------
+HTML
+
+1. An HTML element usually consists of a start tag and end tag, with the content inserted in between:
+<tagname>Content goes here...</tagname> 
+The HTML element is everything from the start tag to the end tag:
+<p>My first paragraph.</p> 
+
+2. A void element is any element that can not, by definition, have any content in between the start and end tags, but the only type of data that void elements are allowed to have are attributes.
+3.All HTML elements can have attributes
+Attributes provide additional information about an element
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+4.<!DOCTYPE html>
+5.<article>
+  <h1>Google Chrome</h1>
+  <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+</article> 
+
+<body>
+The content of the document......
+</body>
+
+This text contains<br>a line break. 
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6> 
+
+<head>
+  <title>Page Title</title>
+</head>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html> 
+
+<img src="smiley.gif" alt="Smiley face" height="42" width="42">
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<title>HTML Reference</title>
+
+<a href="http://www.w3schools.com">Visit W3Schools.com!</a>
+
+<!-- Write your comments here --> 
+
+<head>
+  <title>HTML Reference</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+
+------------------------------------------------------------------------------------
+
+css 
+
+1. A CSS rule-set consists of a selector and a declaration block:
+The selector points to the HTML element you want to style.
+The declaration block contains one or more declarations separated by semicolons.
+Each declaration includes a CSS property name and a value, separated by a colon.
+A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+
+2.descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+div p {
+    background-color: yellow;
+} 
+div > p {
+    background-color: yellow;
+} 
+div + p {
+    background-color: yellow;
+} 
+div ~ p {
+    background-color: yellow;
+} 
+3. Color name - Sample: "black"
+  RGB (Red-green-blue) hexadecimal (hex) value - Sample: "#000000"
+  RGB (Red-green-blue) functional notation - Sample: "rgb(0,0,0)"
+  RGBA (Red-green-blue-alpha) functional notation - Sample: "rgb(0,0,0,1.0)"
+  HSL (Hue-saturation-lightness) functional notation - Sample: "hsl(0,0%,0%)"
+  HSLA (Hue-saturation-lightness-alpha) functional notation - Sample: "hsla(0,0%,0%,1.0)"
+
+CSS: .classname {color:black;}
+
+4.body { 
+    background: lightblue url("img_tree.gif") no-repeat fixed center; 
+} 
+p{
+  color: red;
+  text-align: center;
+}
+5.selector:pseudo-class {
+    property:value;
+} 
+a.highlight:hover {
+    color: #ff0000;
+} 
+6. body{
+  background: #00ff00 url("smiley.gif") no-repeat fixed center;
+}
+7.div.a {
+    text-align: center;
+}
+
+div.b {
+    text-align: left;
+}
+
+div.c {
+    text-align: right;
+}
+
+div.c {
+    text-align: justify;
+} 
+8.h1 {
+    text-decoration: overline;
+}
+
+h2 {
+    text-decoration: line-through;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+h3 {
+    text-decoration: underline overline;
+}
+9.div.a {
+    text-transform: uppercase;
+}
+
+div.b {
+    text-transform: lowercase;
+}
+
+div.c {
+    text-transform: capitalize;
+} 
+10.Serif fonts have small lines at the ends on some characters
+"Sans-serif means without - these fonts do not have the lines at the ends of characters
+11. p {
+    font-family: "Times New Roman", Times, serif;
+} 
+12. p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+13. h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px;
+} 
+14. p.normal {
+    font-weight: normal;
+}
+
+p.thick {
+    font-weight: bold;
+} 
